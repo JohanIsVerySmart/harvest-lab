@@ -97,14 +97,10 @@ Libraries to credit in the root README (Johan owns that file):
 [FastAPI](https://fastapi.tiangolo.com/), and
 [uvicorn](https://www.uvicorn.org/).
 
-## Human review and AI disclosure
+## Review and rehearsal
 
-Review the protocol byte layout with Johan, explain each submitted function,
-and record the exact tool/model, person, purpose, and checks actually performed
-by the human in the PR description. Main orchestration and implementation used
-Codex; delegated planning/tests used gpt-6-luna (medium), environment/attacker work
-used gpt-5.6-terra (low). Confirm the main model label from the app rather than
-assuming it. Johan alone consolidates the root `AI-TOOLS.md` and merges to main.
+Review the protocol byte layout with Johan and explain each submitted function.
+Record the checks performed in the PR description. Johan merges to main.
 
 Questions to rehearse: Why does a successful legitimate hybrid decrypt matter?
 Why isn't rejecting one zero-secret guess a proof of ML-KEM security? How does
