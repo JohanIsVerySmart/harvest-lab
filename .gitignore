@@ -1,0 +1,8 @@
+.venv
+__pycache__/
+*.pem
+*.key
+.env
+*.trace
+lab/certs/
+.DS_Store
