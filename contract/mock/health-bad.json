@@ -1,0 +1,15 @@
+{
+  "ok": false,
+  "problems": [
+    "OpenSSL 3.5 or newer is required. Found LibreSSL."
+  ],
+  "openssl": {
+    "version": "LibreSSL 3.3.6",
+    "path": "/usr/bin/openssl",
+    "ok": false
+  },
+  "trace_supported": false,
+  "ca_file": null,
+  "kem": null,
+  "booth_bits": 40
+}

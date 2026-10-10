@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "attack_running",
+    "message": "An attack is already running."
+  }
+}

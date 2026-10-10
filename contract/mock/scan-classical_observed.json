@@ -1,0 +1,134 @@
+{
+  "schema": "harvestlab.scan/1",
+  "target": {
+    "kind": "public",
+    "input": "example.test",
+    "host": "example.test",
+    "ip": "203.0.113.10",
+    "port": 443,
+    "family": "ipv4",
+    "addresses_seen": 1
+  },
+  "scanned_at": "2026-10-09T21:30:00Z",
+  "elapsed_ms": 812,
+  "cache_age_s": null,
+  "client_profile": "OpenSSL 3.6.4",
+  "probes": {
+    "default": {
+      "offer": "default",
+      "outcome": "ok",
+      "reason": null,
+      "group": "X25519",
+      "group_class": "classical",
+      "tls": "TLSv1.3",
+      "cipher": "TLS_AES_256_GCM_SHA384",
+      "sig_type": "ecdsa_secp256r1_sha256",
+      "peer_cert": "CN=example.test",
+      "verified_peername": "example.test",
+      "key_share": {
+        "client": [
+          {
+            "group": "X25519MLKEM768",
+            "len": 1216
+          },
+          {
+            "group": "X25519",
+            "len": 32
+          }
+        ],
+        "server": {
+          "group": "X25519",
+          "len": 32
+        }
+      },
+      "elapsed_ms": 300,
+      "exit_code": 0,
+      "trace_bytes": 24310,
+      "cmd": [
+        "/opt/homebrew/opt/openssl@3/bin/openssl",
+        "s_client",
+        "-connect",
+        "203.0.113.10:443",
+        "-servername",
+        "example.test",
+        "-tls1_3",
+        "-brief",
+        "..."
+      ],
+      "raw": "CONNECTION ESTABLISHED\nProtocol version: TLSv1.3\n..."
+    },
+    "hybrid_only": {
+      "offer": "X25519MLKEM768",
+      "outcome": "hs_refused",
+      "reason": {
+        "code": "handshake_refused",
+        "text": "The server refused the hybrid-only offer (alert 40). That does not prove it lacks hybrid."
+      },
+      "group": null,
+      "group_class": null,
+      "tls": null,
+      "cipher": null,
+      "sig_type": null,
+      "peer_cert": null,
+      "verified_peername": null,
+      "key_share": null,
+      "elapsed_ms": 320,
+      "exit_code": 1,
+      "trace_bytes": 0,
+      "cmd": [
+        "/opt/homebrew/opt/openssl@3/bin/openssl",
+        "s_client",
+        "-connect",
+        "203.0.113.10:443",
+        "-servername",
+        "example.test",
+        "-tls1_3",
+        "-brief",
+        "..."
+      ],
+      "raw": "connect failed"
+    },
+    "classical_only": {
+      "offer": "X25519:secp256r1:secp384r1",
+      "outcome": "ok",
+      "reason": null,
+      "group": "X25519",
+      "group_class": "classical",
+      "tls": "TLSv1.3",
+      "cipher": "TLS_AES_256_GCM_SHA384",
+      "sig_type": "ecdsa_secp256r1_sha256",
+      "peer_cert": "CN=example.test",
+      "verified_peername": "example.test",
+      "key_share": null,
+      "elapsed_ms": 250,
+      "exit_code": 0,
+      "trace_bytes": 0,
+      "cmd": [
+        "/opt/homebrew/opt/openssl@3/bin/openssl",
+        "s_client",
+        "-connect",
+        "203.0.113.10:443",
+        "-servername",
+        "example.test",
+        "-tls1_3",
+        "-brief",
+        "..."
+      ],
+      "raw": "CONNECTION ESTABLISHED\nProtocol version: TLSv1.3\n..."
+    }
+  },
+  "cert": {
+    "key_class": "EC P-256",
+    "verified": true
+  },
+  "verdict": {
+    "label": "classical_observed",
+    "rule": "3",
+    "headline": "Classical key agreement observed; hybrid not established.",
+    "qualifier": "Observed once, from one OpenSSL client profile.",
+    "notes": [],
+    "reason": null
+  },
+  "pq_note": "Hybrid key agreement protects recorded traffic. It does not make the certificate quantum-safe.",
+  "footer": "One vantage point, one time, three offers from one OpenSSL build (OpenSSL 3.6.4)."
+}

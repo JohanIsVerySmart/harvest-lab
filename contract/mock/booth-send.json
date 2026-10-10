@@ -1,0 +1,84 @@
+{
+  "session": "b3f1c2",
+  "bits": 40,
+  "p_bits": 40,
+  "kem": {
+    "library": "cryptography",
+    "version": "47.0.0"
+  },
+  "warnings": [],
+  "wire_bytes": {
+    "classical": {
+      "m1": 15,
+      "m2": 5,
+      "m3": 55,
+      "total": 75
+    },
+    "hybrid": {
+      "m1": 1199,
+      "m2": 1093,
+      "m3": 50,
+      "total": 2342
+    }
+  },
+  "transcript": {
+    "v": 1,
+    "session": "b3f1c2",
+    "created": "2026-10-09T21:40:00Z",
+    "channels": {
+      "classical": {
+        "M1": {
+          "v": 1,
+          "ch": "classical",
+          "bits": 40,
+          "p": "c5a3f1b7d9",
+          "g": "04",
+          "A": "1f2e3d4c5b"
+        },
+        "M2": {
+          "v": 1,
+          "ch": "classical",
+          "B": "7a6b5c4d3e"
+        },
+        "M3": {
+          "v": 1,
+          "ch": "classical",
+          "nonce": "00112233445566778899aabb",
+          "aead_ct": "ababababababababababababababababababababababababababababababababababab"
+        }
+      },
+      "hybrid": {
+        "M1": {
+          "v": 1,
+          "ch": "hybrid",
+          "bits": 40,
+          "p": "c5a3f1b7d9",
+          "g": "04",
+          "A": "2c3d4e5f6a",
+          "ek": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee...(1184 bytes total)"
+        },
+        "M2": {
+          "v": 1,
+          "ch": "hybrid",
+          "B": "6d5c4b3a29",
+          "kem_ct": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd...(1088 bytes total)"
+        },
+        "M3": {
+          "v": 1,
+          "ch": "hybrid",
+          "nonce": "ffeeddccbbaa998877665544",
+          "aead_ct": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd"
+        }
+      }
+    }
+  },
+  "transcript_sha256": "950858507d1c09d558a76cea553b04044454a402f3878a3f929cc3acc29d234d",
+  "legit": {
+    "classical": {
+      "ok": true
+    },
+    "hybrid": {
+      "ok": true
+    }
+  }
+}

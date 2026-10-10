@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "no_session",
+    "message": "No such booth session (server restarted or demo reset). Send again."
+  }
+}

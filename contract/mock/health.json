@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "openssl": {
+    "version": "OpenSSL 3.6.4",
+    "path": "/opt/homebrew/opt/openssl@3/bin/openssl",
+    "ok": true
+  },
+  "trace_supported": true,
+  "ca_file": "/opt/homebrew/etc/openssl@3/cert.pem",
+  "kem": {
+    "library": "cryptography",
+    "version": "47.0.0"
+  },
+  "booth_bits": 40
+}

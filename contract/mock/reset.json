@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "lab_mode": "classical",
+  "cleared": [
+    "sessions",
+    "attacker"
+  ]
+}

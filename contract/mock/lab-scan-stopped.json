@@ -1,0 +1,34 @@
+{
+  "schema": "harvestlab.scan/1",
+  "target": {
+    "kind": "lab",
+    "input": "localhost",
+    "host": "localhost",
+    "ip": "127.0.0.1",
+    "port": 8443,
+    "family": "ipv4",
+    "addresses_seen": 1
+  },
+  "scanned_at": "2026-10-09T21:30:00Z",
+  "elapsed_ms": 812,
+  "cache_age_s": null,
+  "client_profile": "OpenSSL 3.6.4",
+  "probes": {},
+  "cert": {
+    "key_class": "EC P-256",
+    "verified": true
+  },
+  "verdict": {
+    "label": "inconclusive",
+    "rule": "7c",
+    "headline": "We could not finish this scan. That is the honest answer.",
+    "qualifier": "Observed once, from one OpenSSL client profile.",
+    "notes": [],
+    "reason": {
+      "code": "connection_refused",
+      "text": "The lab server is stopped. Pick a mode to start it."
+    }
+  },
+  "pq_note": "Hybrid key agreement protects recorded traffic. It does not make the certificate quantum-safe.",
+  "footer": "One vantage point, one time, three offers from one OpenSSL build (OpenSSL 3.6.4)."
+}

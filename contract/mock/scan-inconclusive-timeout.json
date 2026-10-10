@@ -1,0 +1,128 @@
+{
+  "schema": "harvestlab.scan/1",
+  "target": {
+    "kind": "public",
+    "input": "example.test",
+    "host": "example.test",
+    "ip": "203.0.113.10",
+    "port": 443,
+    "family": "ipv4",
+    "addresses_seen": 1
+  },
+  "scanned_at": "2026-10-09T21:30:00Z",
+  "elapsed_ms": 812,
+  "cache_age_s": null,
+  "client_profile": "OpenSSL 3.6.4",
+  "probes": {
+    "default": {
+      "offer": "default",
+      "outcome": "timeout",
+      "reason": {
+        "code": "timeout",
+        "text": "No answer within 5 seconds."
+      },
+      "group": null,
+      "group_class": null,
+      "tls": null,
+      "cipher": null,
+      "sig_type": null,
+      "peer_cert": null,
+      "verified_peername": null,
+      "key_share": null,
+      "elapsed_ms": 5000,
+      "exit_code": 1,
+      "trace_bytes": 0,
+      "cmd": [
+        "/opt/homebrew/opt/openssl@3/bin/openssl",
+        "s_client",
+        "-connect",
+        "203.0.113.10:443",
+        "-servername",
+        "example.test",
+        "-tls1_3",
+        "-brief",
+        "..."
+      ],
+      "raw": "connect failed"
+    },
+    "hybrid_only": {
+      "offer": "X25519MLKEM768",
+      "outcome": "timeout",
+      "reason": {
+        "code": "timeout",
+        "text": "No answer within 5 seconds."
+      },
+      "group": null,
+      "group_class": null,
+      "tls": null,
+      "cipher": null,
+      "sig_type": null,
+      "peer_cert": null,
+      "verified_peername": null,
+      "key_share": null,
+      "elapsed_ms": 5000,
+      "exit_code": 1,
+      "trace_bytes": 0,
+      "cmd": [
+        "/opt/homebrew/opt/openssl@3/bin/openssl",
+        "s_client",
+        "-connect",
+        "203.0.113.10:443",
+        "-servername",
+        "example.test",
+        "-tls1_3",
+        "-brief",
+        "..."
+      ],
+      "raw": "connect failed"
+    },
+    "classical_only": {
+      "offer": "X25519:secp256r1:secp384r1",
+      "outcome": "timeout",
+      "reason": {
+        "code": "timeout",
+        "text": "No answer within 5 seconds."
+      },
+      "group": null,
+      "group_class": null,
+      "tls": null,
+      "cipher": null,
+      "sig_type": null,
+      "peer_cert": null,
+      "verified_peername": null,
+      "key_share": null,
+      "elapsed_ms": 5000,
+      "exit_code": 1,
+      "trace_bytes": 0,
+      "cmd": [
+        "/opt/homebrew/opt/openssl@3/bin/openssl",
+        "s_client",
+        "-connect",
+        "203.0.113.10:443",
+        "-servername",
+        "example.test",
+        "-tls1_3",
+        "-brief",
+        "..."
+      ],
+      "raw": "connect failed"
+    }
+  },
+  "cert": {
+    "key_class": "EC P-256",
+    "verified": true
+  },
+  "verdict": {
+    "label": "inconclusive",
+    "rule": "7b",
+    "headline": "We could not finish this scan. That is the honest answer.",
+    "qualifier": "Observed once, from one OpenSSL client profile.",
+    "notes": [],
+    "reason": {
+      "code": "timeout",
+      "text": "Every probe timed out. The site may be blocking this client or the network is filtered."
+    }
+  },
+  "pq_note": "Hybrid key agreement protects recorded traffic. It does not make the certificate quantum-safe.",
+  "footer": "One vantage point, one time, three offers from one OpenSSL build (OpenSSL 3.6.4)."
+}

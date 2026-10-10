@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "invalid_host",
+    "message": "That does not look like a website name. Try something like example.com."
+  }
+}
